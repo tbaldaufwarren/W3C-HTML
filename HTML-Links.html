@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Links</title>
+</head>
+<body>
+    <h1>HTML Links</h1>
+    <p>Links are found in nearly all web pages. Links allow users to click their way from page to page.</p>
+
+    <h2>HTML Links - Hyperlinks</h2>
+    <p>HTML links are hyperlinks.</p>
+    <p>You can click on a link and jump to another document</p>
+    <p>When you move the mouse over a link, the mouse arrow will turn into a little hand.</p>
+
+    <h2>HTML Links - Syntax</h2>
+    <p>The HTML <mark>&lt;a&gt;</mark> tag defines a hyperlink. It has the following syntax</p>
+    <p style="background-color: gray;">&lt;a <span style="color: red;">href</span><span style="color: blue;">="url"</span>link text&lt;&sol;a&gt;</p>
+    <p>The most important attribute of the <mark>&lt;a&gt;</mark> is the <mark>href</mark> attribute, which indicates the link's destination</p>
+    <p>the <i>link text</i> is the part that will be visible to the reader.</p>
+    <p>Clicking on the link text, will send the reader to the specified URL address.</p>
+    <a href="https://github.com/tbaldaufwarren">Visit my github profile!</a>
+    <p>By default, links will appear as follows in all browsers:</p>
+    <ul>
+        <li>An unvisited link is <u style="color: blue;"> underlined and blue</u></li>
+        <li>A visited link is <u style="color: purple;">underlined and purple</u></li>
+        <li>An active link is <u style="color: red;">underlined and red</u></li>
+    </ul>
+
+    <h2>HTML Links - The target Attribute</h2>
+    <p>By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.</p>
+    <p>the <mark>target</mark> attribute specifies where to open the linked document.</p>
+    <p>The <mark>target</mark> attribute can have one of the following values</p>
+    <ul>
+        <li><mark>_self</mark> - Default. Opens the document in the same window&sol;tab as it was clicked</li>
+        <li><mark>_blank</mark> - Opens the documents in a new window or tab</li>
+        <li><mark>_parent</mark> - Opens the document in the parent frame</li>
+        <li><mark>_top</mark> - Opens the document in the full body of the window</li>
+    </ul>
+
+    <h2>Absolute URLs vs. Relative URLs</h2>
+    <p>An <b>absolute URL</b> is a full web address</p>
+    <p>A local link ( a link to a page within the same website) is specified with a <b>relative URL</b> without the "https:&sol;&sol;www" part)</p>
+
+    <h2>HTML LInks - Use an Image as a Link</h2>
+    <p>To sue an image as a link, just put the <mark>&lt;img&gt;</mark> tag inside the <mark>&lt;a&gt;</mark> tag</p>
+    <a href="https://github.com/tbaldaufwarren"><img src="images/smiley.gif" alt="Github Profile"></a>
+
+    <h2>Link to an Email Address</h2>
+    <p>Use <mark>mailto:</mark> inside the <mark>href</mark> attribute to create a link that opens the user's email program (to let them send a new email)</p>
+
+    <a href="mailto:someone@example.com">Send email</a>
+
+    <h2>Button as a Link</h2>
+    <p>To use an HTML button as a link, you have to add some JavaScript code</p>
+    <p>JavaScript allows you to specify what happens at certain events, such as click of a button:</p>
+    <button onclick="document.location ='https://github.com/tbaldaufwarren'">Github Profile</button>
+
+    <h2>Link Titles</h2>
+    <p>The <mark>title</mark> attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element</p>
+    <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+
+    <br>
+    <a href="HTML-CSS.html">Prev</a>
+    <a href="HTML-Images.html">Next</a>
+</body>
+</html>

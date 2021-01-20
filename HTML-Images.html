@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Images</title>
+</head>
+<body>
+    <h1>HTML Images</h1>
+    <h2>HTML Images Syntax</h2>
+    <p>The HTML <mark>&lt;img&gt;</mark> tag is used to embed an image in a web page.</p>
+    <p>Images are not technically inserted into a web page; images are linked to web pages. The <mark>&lt;img&gt;</mark> tag creates a holding space for the referenced image.</p>
+    <p>The <mark>&lt;img&gt;</mark> tage is empty, it contains attributes only, and does not have a closing tag</p>
+    <p>The <mark>&lt;img&gt;</mark> tag has two required attributes:</p>
+    <ul>
+        <li>src - Specifies the path to the image</li>
+        <li>alt - Specifies an alternate text for the image</li>
+    </ul>
+
+    <h2>The alt Attribute</h2>
+    <p>The required <mask>alt</mask> attribute provides an alternate text for an image, if the user for some reason cannot view it (becasue of slow connection, an error in the src attribute, or if the user uses a screen reader).</p>
+    <p>The value of the <mark>alt</mark> attribute should describe the image:</p>
+    <img src="wrongname.gif" alt="Flowers in Chania"><!--This image is intentionally a broken link to display alt text-->
+
+    <h2>Image Size - Width and Height</h2>
+    <p>You can use the <mark>style</mark> attribute to specify the width and height of an iamge.</p>
+    <img src="images/img_girl.jpg" alt="Girl in a jacket" style="width: 500px;height:600px;">
+    <p>Alternately you can use the <mark>width</mark> and <mark>height</mark> attributes:</p>
+    <img src="images/img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+    <p>The <mark>width</mark> and <mark>height</mark> attributes always define the width and height of the image in pixels</p>
+
+    <h2>Width and Height, or Style</h2>
+    <p>The <mark>width</mark>, <mark>height</mark>, and <mark>style</mark> attributes are all valid in HTML.</p>
+    <p>The <mark>style</mark> attribute prevents style sheets from changing the size of images</p>
+
+    <h2>Images in Another Folder</h2>
+    <p>All images on this page are in another folder</p>
+
+    <h2>Images on Another Server/Website</h2>
+    <p>Some web sites point to an external image on another server</p>
+    <p>To point to an images on another server, an absolute URL must be used in the <mask>src</mask> attribute</p>
+    <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+
+    <h2>Animated Images</h2>
+    <p>HTML allows animaged GIFs:</p>
+    <img src="images/programming.gif" alt="Computer Man" style="width: 48px;height:48px;">
+
+    <h2>Image as a LInk</h2>
+    <p>To use an image as a link, put the <mask>&lt;img&gt;</mask> tag inside the <mask>&lt;a&gt;</mask> tag:</p>
+    <a href="https://github.com/tbaldaufwarren">
+        <img src="images/smiley.gif" alt="Github Page" style="width:42px;height:42px;">
+      </a>
+    <h2>Image Floating</h2>
+    <p><img src="images/smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+    The image will float to the right of the text.</p>
+        
+    <p><img src="images/smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+    The image will float to the left of the text.</p>
+
+    <a href="HTML-Links.html">Prev</a>
+    <a href="HTML-Tables.html">Next</a>
+
+
+</body>
+</html>
