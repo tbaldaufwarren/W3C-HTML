@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Semantic Elements</title>
+    <style>
+        .all-browsers {
+  margin: 0;
+  padding: 5px;
+  background-color: lightgray;
+}
+
+.all-browsers > h1, .browser {
+  margin: 10px;
+  padding: 5px;
+}
+
+.browser {
+  background: white;
+}
+
+.browser > h2, p {
+  margin: 4px;
+  font-size: 90%;
+}
+    </style>
+</head>
+<body>
+    <h1>HTML Semantic Elements</h1>
+    <p>Semantic elements = elements with a meaning.</p>
+
+    <h2>What are Semantic Elements?</h2>
+    <p>A smeantic element clearly describes its meaning to both the browser and to the developer</p>
+    <p>Examples of <b>non-semantic</b> elements: <mark>&lt;div&gt;</mark> and <mark>&lt;span&gt;</mark> - Tells nothing about its content.</p>
+    <p>Examples of <b>semantic</b> elements: <mark>&lt;form&gt;</mark>, <mark>&lt;table&gt;</mark>, and <mark>&lt;article&gt;</mark> - Clearly defines its content.</p>
+
+    <h2>Semantic Elements in HTML</h2>
+    <p>Many web sites contain HTML code like: &lt;div id="nav&gt; &lt;div class="header"&gt; &lt;div id="footer"&gt; to indicate navigation, header, and footer</p>
+    <p>In HTML there are some semantic elements that can be used to define different parts of a web page:</p>
+    <img src="images/img_sem_elements.gif" style="float: left; position: relative; left: 50vw;" alt="semantic elements">
+    <ul>
+        <li>&lt;article&gt;</li>
+        <li>&lt;aside&gt;</li>
+        <li>&lt;details&gt;</li>
+        <li>&lt;figcaption&gt;</li>
+        <li>&lt;figure&gt;</li>
+        <li>&lt;footer&gt;</li>
+        <li>&lt;header&gt;</li>
+        <li>&lt;main&gt;</li>
+        <li>&lt;mark&gt;</li>
+        <li>&lt;nav&gt;</li>
+        <li>&lt;section&gt;</li>
+        <li>&lt;summary&gt;</li>
+        <li>&lt;time&gt;</li>
+    </ul>
+
+    <h2>HTML &lt;section&gt; Element</h2>
+    <p>The <mark>&lt;section&gt;</mark> element defines a section in a document.</p>
+    <p>According to W3C's HTML documentation: "A section is a thematic grouping of content, typically with a heading."</p>
+    <p>A web page could normally b split into sections for introduction, content, and contact information.</p>
+
+    <div style="column-count: 2;">
+    <section>
+        <h3>WWF</h3>
+        <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+    </section>
+
+    <section>
+        <h3>WWF's Panda symbol.</h3>
+        <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+    </section>
+</div>
+
+<h2>HTML &lt;article&gt; Element</h2>
+<p>The <mark>&lt;article&gt;</mark> element specifies independent, self-contained content.</p>
+<p>An article should make sense on its own, and it should be possible to distribute it independently from the rest of the website.</p>
+<p>Examples of where an <mark>&lt;article&gt;</mark> element can be used:</p>
+<ul>
+    <li>Forum post</li>
+    <li>Blog post</li>
+    <li>Newspaper article</li>
+</ul>
+
+<article class="all-browsers">
+    <h1>Most Popular Browsers</h1>
+    <article class="browser">
+      <h2>Google Chrome</h2>
+      <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+    </article>
+    <article class="browser">
+      <h2>Mozilla Firefox</h2>
+      <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+    </article>
+    <article class="browser">
+      <h2>Microsoft Edge</h2>
+      <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+    </article>
+  </article>
+  <!--Lef off here 01/21/21-->
+
+</body>
+</html>

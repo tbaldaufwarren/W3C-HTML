@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Responsive</title>
+</head>
+<body>
+    <h1>HTML Responsive Web Design</h1>
+    <p>Responsive web design is about creating web pages that look good on all devices!</p>
+    <p>A responsive web design will automatically adjust for different screen sizes and viewports.</p>
+
+    <h2>What is Responsive Design?</h2>
+    <p>Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, or enlarge, a website, to make it look good on all devices (desktops, tablets, and phones):</p>
+
+    <h2>Setting The Viewport</h2>
+    <p>To create a responsive website, add the following <mark>&lt;meta&gt;</mark> tag to all your web pages:</p>
+    <p>&lt;meta name="viewport" content=caling.</p>
+    
+    <h2>Responsive Images</h2>
+    <p>Responsive images are images th"width=device-width, initial-scale=1.0"</p>
+
+    <p>This will set the viewport of your page, which will give the browser instructions on how to control the page's dimensions and sat scale nicely to fit any browser size</p>
+    <h3>Using the width property</h3>
+    <p>If the CSS <mark>width</mark> property is set to 100%, the image will be responsive and scale up and down:</p>
+    <img src="images/img_girl.jpg" style="width:100%;">
+    <p>Notice that in the example above, the image can be scaled up to be larger than its original size. A better solution, in many cases, will be to use the <mark>max-width</mark> property instea.</p>
+
+    <h3>Using the max-width Property</h3>
+    <p>If the <mark>max-width</mark> property is set to 100%, the image will scale down if it has to, but never scale up to be alrger than its original size:</p>
+    <img src="images/img_girl.jpg" style="max-width:100%;height:auto;">
+
+    <h3>Show Different Images Depending on Browser Width</h3>
+    <p>The HTML <mark>&lt;picture&gt;</mark> element allows you to define different images for different browser window sizes.</p>
+    <p>Resize the browser window to see how the image below change depending on the width:</p>
+    <picture>
+        <source srcset="images/img_smallflower.jpg" media="(max-width: 600px)">
+        <source srcset="images/img_flowers.jpg" media="(max-width: 1500px)">
+        <source srcset="images/flowers.jpg">
+        <img src="img_flowers.jpg" alt="Flowers" style="width:auto;">
+      </picture>
+
+      <h2>Responsive Text Size</h2>
+      <p>The text size can be set with a "vw" unit, which means the "viewport width".</p>
+      <p>That way the text size will follow the size of the browser window:</p>
+
+      <h1 style="font-size:10vw">Hello World</h1>
+
+      <h2>Media Queries</h2>
+      <p>In addition to resize text and images, it is also common to use media queries in responsive web pages.</p>
+      <p>With media queries you can define completely different styles for different browser sizes.</p>
+      
+      <h2>Responsive Web Design - Framework</h2>
+      <p>All popular CSS Frameworks offer responsive design.</p>
+      <p>They are free, and easy to use.</p>
+
+      <a href="HTML-Layout.html">Prev</a>
+      <a href="HTML-Computercode.html">Next</a>
+
+
+
+    
+</body>
+</html>
