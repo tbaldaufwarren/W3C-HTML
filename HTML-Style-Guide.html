@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Style Guide and Coding Conventions</title>
+</head>
+<body>
+    <h1>HTML Style Guide and Coding Conventions</h1>
+
+    <p>A consistent, clean, and tidy HTML code makes it easier for others to read and understand your code.</p>
+    <p>Here are some guidelines and tips for creating good HTML code.</p>
+
+    <h2>Always Declare Document Type</h2>
+    <p>Always declare the document type as the first line in your doucment</p>
+    <p>The correct document type for HTML is:</p>
+    <p>&lt;!DOCTYPE html&gt;</p>
+
+    <h2>Use Lowercase Element Names</h2>
+    <p>HTML allows mixing uppercase and lowercase letters in element names.</p>
+    <p>However, we recommend using lowercase element names, because:</p>
+    <ul>
+        <li>Mixing uppercase and lowercase names looks bad</li>
+        <li>Developers normally use lowercase names</li>
+        <li>Lowercase looks cleaner</li>
+        <li>Lowercase is easier to write</li>
+    </ul>
+
+    <h2>Close all HTML Elements</h2>
+    <p>In HTML, you do not have to close all elements</p>
+    <p>However, closing all HTML elements is strongly recommended</p>
+
+    <h2>Use Lowercase Attribute Names</h2>
+    <p>HTML allows mixing uppercase and lwoercase letters in attribute names.</p>
+    <p>However, we recommend using lowercase attribute names, because:</p>
+    <ul>
+        <li>Mixing uppercase and lowercase names looks bad</li>
+        <li>Developers usually use lowercase names</li>
+        <li>lowercase looks cleaner</li>
+        <li>Lowercase are easier to write</li>
+    </ul>
+
+    <h2>Always Quote Attribute Values</h2>
+    <p>HTML allows attribute values without quotes.</p>
+    <p>However, we recommend quoting attribute values, because:</p>
+    <ul>
+        <li>Devlopers normally quote attribute values</li>
+        <li>Quoted values are easier to read</li>
+        <li>You MUST use quotes if the value contains spaces</li>
+    </ul>
+
+    <h2>Always Specify alt, width, and height for Images</h2>
+    <p>Always specify the <mark>alt</mark> attribute for images. This attribute is important if the image for some reason cannot be displayed.</p>
+    <p>Also, always define the <mark>width</mark> and <mark>height</mark> of images. This reduces flickering, because the browser can reserve space for the image before loading.</p>
+
+    <h2>Spaces and Equal Signs</h2>
+    <p>HTML allows spaces around equal signs. But space-less is easier to read and groups entities better together.</p>
+
+    <h2>Avoid Long Code LInes</h2>
+    <p>When using an HTML editor, it is NOT convenient to scroll right and left to read the HTML code.</p>
+    <p>Try to avoid too long code lines.</p>
+
+    <h2>Blank Lines and Indentation</h2>
+    <p>Do not add blank lines, spaces, or indentations without a reason.</p>
+    <p>For readability, add blank lines to separate large or logical code blocks.</p>
+    <p>For readability, add two spaces of indentation. Do not use the tab key.</p>
+
+    <h2>Never Skip the &lt;title&gt; Element</h2>
+    <p>The <mark>&lt;title&gt;</mark> element is required in HTML.</p>
+    <p>The contents of a page title is very important for search engine optimization (SEO)! The page title is used by search engine algorithms to decide the order when listing pages in search results.</p>
+    <p>The <mark>&lt;title&gt;</mark> element:</p>
+    <ul>
+        <li>defines a title in the browser toolbar</li>
+        <li>provides a title for the page when it is added to favorites</li>
+        <li>displays a title for the page in search-engine results</li>
+    </ul>
+
+    <p>So, try to make the title as accurate and meaningful as possible:</p>
+
+    <h2>Omitting &lt;html&gt; and &lt;body&gt;?</h2>
+    <p>An HTML page will validate without <mark>&lt;html&gt;</mark> and <mark>&lt;body&gt;</mark> tags:</p>
+    <p>Adding the <mark>&lt;html&gt;</mark> and <mark>&lt;body&gt;</mark> tags.</p>
+    <p>Omitting <mark>&lt;body&gt;</mark> can produce errors in older browsers.</p>
+    <p>Omitting <mark>&lt;html&gt;</mark> and <mark>&lt;body&gt;</mark> can also crash DOM and XML software.</p>
+
+    <h2>Omitting &lt;head&gt;?</h2>
+    <p>The HTML &lt;head&gt; tag can also be omitted.</p>
+    <p>Browsers will add all elements before <mark>&lt;body&gt;</mark>, to a default <mark>&lt;head&gt;</mark> element.</p>
+
+    <h2>Close Empty HTML Elements?</h2>
+    <p>In HTML, it is optional to close empty elements.</p>
+    <p>If you expect XML/XHTML software to access your page, keep the closing slash (/), because it is required in XML and XHTML.</p>
+
+    <h2>Add the lang Attribute</h2>
+    <p>You should always include the <mark>lang</mark> attribute inside the <mark>&lt;html&gt;</mark> tag, to declare the language of the Web page. This is meant to assist search engines and browsers.</p>
+
+    <h2>Meta Data</h2>
+    <p>To ensure proper interpretation and correct search engine indexing, both the language and the character encoding <mark>&lt;meta charset="charset"&gt;</mark> should be defined as early as possible in an HTML document.</p>
+
+    <h2>Setting The Viewport</h2>
+    <p>The viewport is the user's visible area of a web page. It varies with the device - it will be smaller on a mobile phone than on a computer screen.</p>
+    <p>You should include the following <mark>&lt;meta&gt;</mark> element in all you web pages:</p>
+    <p>&lt;meta name="viewport" content="width=devide-width, initial-scale=1.0"&gt;</p>
+    <p>This gives the browser instructions on how to control the page's dimensions and scaling.</p>
+    <p>The <mark>width=device-width</mark> part sets the width of the page to follow the screen-width of the device (which will vary dpeending on the device).</p>
+    <p>The <mark>initial-scale=1.0</mark> part sets the initial zoom level when the page is first loaded by the browser.</p>
+
+    <h2>HTML Comments</h2>
+    <p>Short comments should be written on one line, like this</p>
+    <p style="color: green;">&lt;!-- This is a comment --&gt;</p>
+    <p>Comments that span more than one line, should be written like this:</p>
+    <p style="color: green;">&lt;!-- <br>This is a long comment example. This is a long comment example. <br>This is a long comment example.  This is a long comment example. <br> --&gt;</p>
+    
+    <h2>Using Style Sheets</h2>
+    <p>Use simple syntax for linking to style sheets (the <mask>type</mask> attribute is not necessary):</p>
+    <p>&lt;link rel="stylesheet" href="styles.css"&gt;</p>
+    <p>Short CSS rules can be written compressed, like this:</p>
+    <p>p.intro {font-family:Verdana;font-size:16em;}</p>
+    <p>Long CSS rules should be written ove multiple lines:</p>
+    <p>body{<br>
+        background-color: lightgrey;<br>
+        font-family: "Arial Black", Helvetica, sans-serif;<br>
+        font-size: 16em;<br>
+        color: black;<br>
+    }
+    </p>
+
+    <ul>
+        <li>Place the opening bracket on the same line as the selector</li>
+        <li>Use one space before the opening bracket</li>
+        <li>Use two spaces of indentation</li>
+        <li>Use semicolon after each property-pair, including the last</li>
+        <li>Only use quotes around values if the value contains spaces</li>
+        <li>Place the closing bracket on a new line, without leading spaces</li>
+    </ul>
+
+    <h2>Loading JavaScript in HTML</h2>
+    <p>Use simple syntax for loading external scripts (the <mark>type</mark> attribute is not necessary):</p>
+    <p>&lt;script src="myscript.js"&gt;</p>
+
+    <h2>Accessing HTML Elements with JavaScript</h2>
+    <p>Using "untidy" HTML code can result in JavaScript errors.</p>
+    <p>These two JavaScript statements will produce different results:</p>
+
+    <h2>Use Lower Case File Names</h2>
+    <p>Some web serves (Apache, Unix) are case sensitive about file names: "london.jpg" cannot be accessed as "London.jpg".</p>
+    <p>Other web servers (Microsoft, IIS) are not case sensitive: "london.jpg" can be accessed as "London.jpg".</p>
+    <p>If you use a mix of uppercase and lowercase, you have to be aware of this.</p>
+    <p>If you move from a case-insensitive to a case-sensitive server, even small errors will break your web!</p>
+    <p>To avoid these problems, always use lowercase file names!</p>
+    
+    <h2>File Extensions</h2>
+    <p>HTML files should have a <b>.html</b> extension (<b>.htm</b> is allowed).</p>
+    <p>CSS files should have a <b>.css</b> extension.</p>
+    <p>JavaScript files should have a <b>.js</b> extension.</p>
+
+    <h2>Differences Between .html and .html</h2>
+    <p>There is no difference between the .html and .html file extensions!</p>
+    <p>Both will be treated as HTML by any web browser and web server.</p>
+
+    <h2>Default Filenames</h2>
+    <p>When a URL does not specify a filename at the end (like "https://www.w3schools.com/"), the server just adds a default filename, such as "index.html", "index.htm", or "default.htm".</p>
+    <p>If your server is configured only with "index.html" as the default filename, your file must be named "index.html", and not "default.html".</p>
+    <p>However, servers can be configured with more than one default filename; usually you can set up as many default filenames as you want.</p>
+
+    <a href="HTML-Semantics.html">Prev</a>
+    <a href="HTML-Entities.html">Next</a>
+    
+</body>
+</html>
